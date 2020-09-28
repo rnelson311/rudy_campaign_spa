@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+
+{% set page ='home' %}
+
+{% block meta %}
+  <title>Rudy Metayer</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+{% endblock %}
+
+{% block content %}
+
+  {% include "parts/hero.html" %}
+
+  <main id="main">
+
+    {% include "parts/about-section.html" %}
+    
+    {% include "parts/gallery-section.html" %}
+
+    {% include "parts/contact-section.html" %}
+
+  </main><!-- End #main -->
+
+{% endblock %}
