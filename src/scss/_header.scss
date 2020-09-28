@@ -55,8 +55,11 @@
       line-height: 1;
       font-weight: 400;
       letter-spacing: 3px;
-      span {
+      span.primary {
         color: $primary;
+      }
+      span.secondary {
+        color: $secondary;
       }
     }
 
