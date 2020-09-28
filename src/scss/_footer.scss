@@ -2,7 +2,7 @@
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: darken($secondary, 5);
+  background: darken($secondary, 10);
   color: $white;
   font-size: 14px;
   text-align: center;
@@ -11,7 +11,7 @@
   h3 {
     font-size: 36px;
     font-weight: 700;
-    color: $primary;
+    color: darken($primary, 5);
     position: relative;
     padding: 0;
     margin: 0 0 15px 0;

@@ -4,7 +4,7 @@
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: rgba(darken($secondary, 10), 0.8);
+  background-color: rgba(darken($default, 10), 0.8);
   overflow: hidden;
   padding: 0;
 
@@ -18,7 +18,7 @@
 
   .carousel-item::before {
     content: '';
-    background-color: rgba(darken($secondary, 20), 0.5);
+    background-color: rgba(darken($default, 20), 0.5);
     position: absolute;
     top: 0;
     right:0;
