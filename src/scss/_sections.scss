@@ -276,6 +276,118 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+  padding: 80px 0;
+  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // background: rgba(darken($secondary, 20), 0.7);
+    background: $secondary;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .testimonial-item {
+    text-align: center;
+    color: $white;
+
+    .testimonial-img {
+      width: 100px;
+      border-radius: 50%;
+      border: 6px solid rgba($white, .15);
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+      color: $white;
+      font-family: $font-default;
+    }
+
+    h4 {
+      font-size: 14px;
+      color: #ddd;
+      margin: 0 0 15px 0;
+      font-family: $font-secondary;
+    }
+
+    .stars {
+      color: $primary;
+      margin-bottom: 10px;
+    }
+
+    .quote-icon-left, .quote-icon-right {
+      color: rgba($white, .4);
+      font-size: 26px;
+    }
+
+    .quote-icon-left {
+      display: inline-block;
+      left: -5px;
+      position: relative;
+    }
+
+    .quote-icon-right {
+      display: inline-block;
+      right: -5px;
+      position: relative;
+      top:10px;
+    }
+
+    p {
+      font-style: italic;
+      margin: 0 auto 15px auto;
+      color: #eee;
+    }
+
+  }
+
+  .owl-nav, .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba($white, .4) !important;
+  }
+
+  .owl-dot.active {
+    background-color: $primary !important;
+  }
+
+  @media (min-width: 1024px) {
+    background-attachment: fixed;
+  }
+
+  @media (min-width: 992px) {
+    .testimonial-item p {
+      width: 80%;
+    } 
+  }
+
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
